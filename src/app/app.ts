@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DashboardComponent } from './component/dashboard.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [DashboardComponent],
+  template: `<app-dashboard></app-dashboard>`,
 })
 export class App {
-  protected title = 'portfolio';
+  protected title = 'Yosef Nago';
 }
