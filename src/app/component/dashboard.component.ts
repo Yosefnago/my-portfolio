@@ -18,6 +18,7 @@ export class DashboardComponent {
     error = false;
     emptyFields = false;
     invalidEmail = false;
+    isSending = false;
 
     constructor() {}
 
@@ -28,6 +29,7 @@ export class DashboardComponent {
             this.sent = false;
             this.emptyFields = true;
             this.invalidEmail = false;
+            this.isSending = false;
             
             setTimeout(() => {
                 this.emptyFields = false;
@@ -38,11 +40,12 @@ export class DashboardComponent {
             this.invalidEmail = true;
             this.error = false;
             this.sent = false;
+            this.isSending = false;
             setTimeout(() => (this.invalidEmail = false), 3000);
             return;
         }
 
-
+        this.isSending = true;
 
         const templateParams = {
         from_name: this.name,
@@ -57,6 +60,7 @@ export class DashboardComponent {
             environment.emailPublicKey
         )
         .then(() => {
+            this.isSending = false;
             this.sent = true;
             this.error = false;
 
@@ -69,6 +73,7 @@ export class DashboardComponent {
             this.message = '';
         })
         .catch(() => {
+            this.isSending = false;
             this.error = true;
             this.sent = false;
 

@@ -338,7 +338,35 @@ section {
   font-size: 14px;
   z-index: 999;
 }
+.status-area {
+    min-height: 30px;       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    transition: opacity 0.3s ease;
+}
 
+.success-msg,
+.error-msg,
+.empty-fields {
+    font-size: 14px;
+    margin: 0;
+}
+.spinner {
+    border: 3px solid #ccc;
+    border-top: 3px solid #333;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    animation: spin 0.7s linear infinite;
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;

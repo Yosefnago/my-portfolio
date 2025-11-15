@@ -282,17 +282,22 @@
                     class="email-input">
 
             <textarea [(ngModel)]="message" placeholder="Your Message" class="contact-textarea" ></textarea>
-            <button (click)="sendEmail(emailCtrl)" class="contact-button">Send Message</button>
+            <button (click)="sendEmail(emailCtrl)" class="contact-button" [disabled]="isSending">Send Message</button>
 
-            @if (sent) {
-                <p class="success-msg">✅ Message sent successfully!</p>
-            }@else if (error) {
-                <p class="error-msg">❌ Failed to send message. Try again later.</p>
-            }@else if (emptyFields) {
-                <p class="empty-fields">⚠️ Fields cannot be empty.</p>
-            }@else if (invalidEmail) {
-                <p class="error-msg">⚠️ Please enter a valid email address.</p>
-            }
+            <div class="status-area">
+                @if (isSending) {
+                    <span class="spinner"></span>
+                }
+                @if (sent) {
+                    <p class="success-msg">✅ Message sent successfully!</p>
+                }@else if (error) {
+                    <p class="error-msg">❌ Failed to send message. Try again later.</p>
+                }@else if (emptyFields) {
+                    <p class="empty-fields">⚠️ Fields cannot be empty.</p>
+                }@else if (invalidEmail) {
+                    <p class="error-msg">⚠️ Please enter a valid email address.</p>
+                }
+            </div>
             
             
         </div>
