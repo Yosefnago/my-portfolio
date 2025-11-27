@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import { environment } from "../../environments/enviroment";
@@ -20,8 +20,20 @@ export class DashboardComponent {
     invalidEmail = false;
     isSending = false;
 
-    constructor() {}
+    private words: string[] = ["CODE.", "TEST.", "DEPLOY.", "REPEAT."];
+    private wordIndex: number = 0;
+    private charIndex: number = 0;
+    private isDeleting: boolean = false;
+    private typingSpeed: number = 105; 
+    private deletingSpeed: number = 55; 
+    private pauseDelay: number = 1500;
 
+    constructor(private el: ElementRef) {}
+
+    ngAfterViewInit(): void {
+        this.typeEffect(); 
+    }
+    
     sendEmail(emailCtrl: any) {
 
         if (!this.name || !this.email || !this.message) {
@@ -89,5 +101,45 @@ export class DashboardComponent {
             section.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
+    private typeEffect(): void {
+        const currentWord = this.words[this.wordIndex];
+        const textElement = this.el.nativeElement.querySelector('.animated-text') as HTMLElement;
+        const containerElement = this.el.nativeElement.querySelector('.animated-text-container') as HTMLElement;
+        
+        if (!textElement || !containerElement) return;
 
+        if (this.isDeleting) {
+            this.charIndex--;
+            textElement.textContent = currentWord.substring(0, this.charIndex);
+            
+            containerElement.classList.remove('done-typing');
+
+            if (this.charIndex === 0) {
+                this.isDeleting = false;
+                this.wordIndex = (this.wordIndex + 1) % this.words.length; 
+                setTimeout(() => this.typeEffect(), 500); 
+                return;
+            }
+            
+            containerElement.style.animation = `typing 4s steps(${currentWord.length}, end) infinite, blink-caret 0.75s step-end infinite`;
+
+            setTimeout(() => this.typeEffect(), this.deletingSpeed);
+
+        } else {
+            this.charIndex++;
+            textElement.textContent = currentWord.substring(0, this.charIndex);
+            
+            containerElement.style.width = 'auto';
+            
+
+            if (this.charIndex === currentWord.length) {
+                this.isDeleting = true;
+                
+                setTimeout(() => this.typeEffect(), this.pauseDelay);
+                return;
+            }
+
+            setTimeout(() => this.typeEffect(), this.typingSpeed);
+        }
+    }
 }   

@@ -86,6 +86,22 @@
     margin-right: 40px;
     background-color: transparent;
 }
+.animated-text-container {
+    font-size: 48px; 
+    font-weight: 700;
+    min-height: 45px; 
+    white-space: nowrap; 
+    width: 0; 
+    animation: typing 4s steps(40, end) infinite; 
+    margin-top: 140px;
+    margin-left: 120px;
+}
+
+.animated-text {
+    color: #89dfad; 
+    text-shadow: 0 0 5px #5ff7ab8c, 0 0 10px #03ff10; 
+}
+
 section {
   position: relative;
   min-height: 100vh; 
@@ -367,6 +383,21 @@ section {
 @keyframes spin {
     100% { transform: rotate(360deg); }
 }
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Keyframes - אפקט הבהוב של סמן ההקלדה */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #55c182; }
+}
+animated-text-container.done-typing {
+    animation: none; /* ביטול אנימציות ה-typing וה-blink-caret */
+    border-right: none; /* הסרת הסמן */
+    width: auto; /* מאפשר לטקסט להיות בגודלו המלא */
+}
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
@@ -415,6 +446,18 @@ section {
   .tech-item {
     width: 100% !important;
     justify-content: center;
+  }
+  .animated-text-container {
+      margin-top: 20px; 
+      margin-left: auto; 
+      margin-right: auto; 
+      align-items: center;
+      font-size: 32px; 
+      max-width: 90%; 
+    }
+    
+  .animated-text {
+    display: block; 
   }
   
 }
