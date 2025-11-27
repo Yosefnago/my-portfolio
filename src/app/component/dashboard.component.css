@@ -388,15 +388,14 @@ section {
     to { width: 100%; }
 }
 
-/* Keyframes - אפקט הבהוב של סמן ההקלדה */
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: #55c182; }
 }
 animated-text-container.done-typing {
-    animation: none; /* ביטול אנימציות ה-typing וה-blink-caret */
-    border-right: none; /* הסרת הסמן */
-    width: auto; /* מאפשר לטקסט להיות בגודלו המלא */
+    animation: none; 
+    border-right: none; 
+    width: auto; 
 }
 @media (max-width: 768px) {
   .main-container {
