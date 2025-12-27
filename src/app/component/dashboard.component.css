@@ -146,6 +146,7 @@ section {
   transform: translateY(-5px);
   background-color: rgba(255,255,255,0.12);
 }
+
 .project-links {
   display: flex;
   justify-content: flex-end;
@@ -156,6 +157,7 @@ section {
   font-size: 24px;
   transition: transform 0.2s ease, color 0.2s ease;
 }
+
 .project-links a:hover {
   color: #55c182; 
   transform: scale(1.2);
