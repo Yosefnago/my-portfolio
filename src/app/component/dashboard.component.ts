@@ -24,16 +24,16 @@ export class DashboardComponent {
     private wordIndex: number = 0;
     private charIndex: number = 0;
     private isDeleting: boolean = false;
-    private typingSpeed: number = 105; 
-    private deletingSpeed: number = 55; 
+    private typingSpeed: number = 105;
+    private deletingSpeed: number = 55;
     private pauseDelay: number = 1500;
 
-    constructor(private el: ElementRef) {}
+    constructor(private el: ElementRef) { }
 
     ngAfterViewInit(): void {
-        this.typeEffect(); 
+        this.typeEffect();
     }
-    
+
     sendEmail(emailCtrl: any) {
 
         if (!this.name || !this.email || !this.message) {
@@ -42,11 +42,11 @@ export class DashboardComponent {
             this.emptyFields = true;
             this.invalidEmail = false;
             this.isSending = false;
-            
+
             setTimeout(() => {
                 this.emptyFields = false;
-                }, 3000);
-            return; 
+            }, 3000);
+            return;
         }
         if (emailCtrl.invalid) {
             this.invalidEmail = true;
@@ -60,9 +60,9 @@ export class DashboardComponent {
         this.isSending = true;
 
         const templateParams = {
-        from_name: this.name,
-        from_email: this.email,
-        message: this.message,
+            from_name: this.name,
+            from_email: this.email,
+            message: this.message,
         };
 
         emailjs.send(
@@ -71,28 +71,28 @@ export class DashboardComponent {
             templateParams,
             environment.emailPublicKey
         )
-        .then(() => {
-            this.isSending = false;
-            this.sent = true;
-            this.error = false;
+            .then(() => {
+                this.isSending = false;
+                this.sent = true;
+                this.error = false;
 
-            setTimeout(() => {
-            this.sent = false;
-            }, 3000);
+                setTimeout(() => {
+                    this.sent = false;
+                }, 3000);
 
-            this.name = '';
-            this.email = '';
-            this.message = '';
-        })
-        .catch(() => {
-            this.isSending = false;
-            this.error = true;
-            this.sent = false;
+                this.name = '';
+                this.email = '';
+                this.message = '';
+            })
+            .catch(() => {
+                this.isSending = false;
+                this.error = true;
+                this.sent = false;
 
-            setTimeout(() => {
-            this.error = false;
-            }, 3000);
-        });
+                setTimeout(() => {
+                    this.error = false;
+                }, 3000);
+            });
     }
 
     scrollTo(sectionId: string) {
@@ -105,22 +105,22 @@ export class DashboardComponent {
         const currentWord = this.words[this.wordIndex];
         const textElement = this.el.nativeElement.querySelector('.animated-text') as HTMLElement;
         const containerElement = this.el.nativeElement.querySelector('.animated-text-container') as HTMLElement;
-        
+
         if (!textElement || !containerElement) return;
 
         if (this.isDeleting) {
             this.charIndex--;
             textElement.textContent = currentWord.substring(0, this.charIndex);
-            
+
             containerElement.classList.remove('done-typing');
 
             if (this.charIndex === 0) {
                 this.isDeleting = false;
-                this.wordIndex = (this.wordIndex + 1) % this.words.length; 
-                setTimeout(() => this.typeEffect(), 500); 
+                this.wordIndex = (this.wordIndex + 1) % this.words.length;
+                setTimeout(() => this.typeEffect(), 500);
                 return;
             }
-            
+
             containerElement.style.animation = `typing 4s steps(${currentWord.length}, end) infinite, blink-caret 0.75s step-end infinite`;
 
             setTimeout(() => this.typeEffect(), this.deletingSpeed);
@@ -128,13 +128,13 @@ export class DashboardComponent {
         } else {
             this.charIndex++;
             textElement.textContent = currentWord.substring(0, this.charIndex);
-            
+
             containerElement.style.width = 'auto';
-            
+
 
             if (this.charIndex === currentWord.length) {
                 this.isDeleting = true;
-                
+
                 setTimeout(() => this.typeEffect(), this.pauseDelay);
                 return;
             }

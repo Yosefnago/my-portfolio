@@ -1,161 +1,319 @@
-
- <section id="home">  
-    <div class="nav-bar" >
+<section id="home">
+    <div class="nav-bar">
 
         <button class="nav-btns" (click)="scrollTo('home')">Home</button>
         <button class="nav-btns" (click)="scrollTo('projects')">Projects</button>
+        <button class="nav-btns" (click)="scrollTo('certificates')">Certificates</button>
         <button class="nav-btns" (click)="scrollTo('skills')">Skills</button>
         <button class="nav-btns" (click)="scrollTo('contact')">Contact</button>
-                
+
     </div>
-        <div class="main-container">
-            <div class="content">
-                <h1 class="ti">Yosef Nago</h1>
-                    <p class="par">
-                        Hands-on experience in designing and developing software and RESTful web applications
-                        using Java, Spring boot and Angular (Html, CSS, TypeScript).
-                    </p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/yosefnago5" target="_blank" aria-label="LinkedIn">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-                        </a>
-                        <a href="https://github.com/Yosefnago" target="_blank" aria-label="GitHub">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                        </a>
-                        <a href="yosef-2026.pdf" download class="cv-button" aria-label="Download CV">
-                            📄 Download CV
-                        </a>
-                    </div>
-                    <div class="animated-text-container">
-                        <span class="animated-text" data-words='["BUILD.", "CREATE.", "DEVELOP.", "LEARN."]' aria-label="Build, Create, Develop, Learn"></span>
-                        
-                    </div>
-            </div> 
+    <div class="main-container">
+        <div class="content">
+            <h1 class="ti">Yosef Nago</h1>
+            <p class="par">
+                Java & Spring Boot Backend Developer | Angular | TypeScript | Hibernate/JPA | PostgreSQL
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yosefnago5" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Yosefnago" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub">
+                </a>
+                <a href="yosef-2026.pdf" download class="cv-button" aria-label="Download CV">
+                    📄 Download CV
+                </a>
+            </div>
+            <div class="animated-text-container">
+                <span class="animated-text" data-words='["BUILD.", "CREATE.", "DEVELOP.", "LEARN."]'
+                    aria-label="Build, Create, Develop, Learn"></span>
+
+            </div>
+        </div>
 
         <div class="right-side">
-        
+
             <p class="about-text">
-                Full-Stack / Backend Developer with hands-on experience in designing and developing scalable, 
-                maintainable web applications using Java, Spring Boot, and Angular.
-                Strong understanding of software architecture, RESTful API design, and microservice-based systems.
-                Experienced with database design (PostgreSQL, MySQL).
-                Passionate about clean code, modular design, and continuous learning in software engineering and system architecture.
+                Java Backend Developer with a strong technological and economic background. I specialize in designing
+                and
+                developing scalable, data-driven applications, focusing on robust performance and security.
+                I possess hands-on expertise in backend development utilizing the full stack: Java, Spring Boot,
+                Angular,
+                Vaadin, and PostgreSQL.
+                My experience includes implementing microservice architectures, applying Object-Oriented Programming
+                (OOP)
+                principles, and designing efficient databases.
+                I am passionate about bridging technology with business logic to deliver efficient, maintainable, and
+                high-performance software solutions.
             </p>
-        </div>  
+        </div>
     </div>
     <section id="projects">
         <h2 class="section-titles">Projects Overview</h2>
-    
+
 
         <div class="projects-row">
+            <div class="project-card">
+                <div class="title">Java Performance Engineering</div>
+                <div class="project-content">
+                    This repository documents a logscanner engineering journey in Java.
+                    Starting from the most natural, readable solution and improving it step by step.
+                    each version isolates one bottleneck, fixes it, measures the result, and explains why it worked.
+
+                    The goal is not just to arrive at a fast solution.
+                    It is to understand why the naive solution is slow, and what exactly each change does to the
+                    hardware and the JVM.
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Yosefnago/java-deep-dive" target="_blank" aria-label="GitHub link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="title">ems-system</div>
+                <div class="project-content">
+                    A comprehensive, modular Full-Stack application designed for managing human resources,
+                    employee life cycles, and organizational workflows. This system is built with a focus on security,
+                    scalability, and real-time updates.
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Yosefnago/ems-system" target="_blank" aria-label="GitHub link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
             <div class="project-card">
-
                 <div class="title">ApiDoc CLI Tool</div>
                 <div class="project-content">
-                    ApiDoc is a standalone CLI tool for generating API documentation from Java and Spring Boot projects using static AST analysis.
-                    It scans Controllers and DTOs marked with custom annotations and builds structured Markdown documentation
+                    ApiDoc is a standalone CLI tool for generating API documentation from Java and Spring Boot projects
+                    using static AST analysis.
+                    It scans Controllers and DTOs marked with custom annotations and builds structured Markdown
+                    documentation
                     without running the application or loading the Spring context.
-                    The tool supports multi-module Maven projects and microservice architectures, enabling full type resolution
+                    The tool supports multi-module Maven projects and microservice architectures, enabling full type
+                    resolution
                     across shared libraries and services.
                 </div>
-                
+
                 <div class="project-links">
                     <a href="https://github.com/Yosefnago/api-doc-CLI-TOOL" target="_blank" aria-label="GitHub link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
-                            <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z"/>
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
                         </svg>
                     </a>
-                
+
                 </div>
             </div>
             <div class="project-card">
 
                 <div class="title">Merkaz_lib-Collaboration Project</div>
-                    <div class="project-content">
-                        Frontend development as part of a collaborative full-stack project built together with a backend developer,
-                        using Git for version control, branching, merging, and coordinated feature integration.
-                        Responsible for the entire client-side implementation using Angular.
-                        The frontend was designed with modular architecture, reusable components,
-                        and responsive layouts to ensure a smooth and secure user experience across all system features.
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/Amirlabai/Librery_Server.git" target="_blank" aria-label="GitHub link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
-                                <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z"/>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="project-content">
+                    Frontend development as part of a collaborative full-stack project built together with a backend
+                    developer,
+                    using Git for version control, branching, merging, and coordinated feature integration.
+                    Responsible for the entire client-side implementation using Angular.
+                    The frontend was designed with modular architecture, reusable components,
+                    and responsive layouts to ensure a smooth and secure user experience across all system features.
                 </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Amirlabai/Librery_Server.git" target="_blank" aria-label="GitHub link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
             <div class="project-card">
 
                 <div class="title">Ams - microservice</div>
-                    <div class="project-content">
-                        AMS System is a microservices-based Accounting Management System designed to provide
-                        comprehensive accounting and management functionalities.
-                        The system is built using Spring Boot and Spring Cloud technologies,
-                        following a microservices architecture pattern for scalability, maintainability, and resilience.
-                    </div>
-                    
-                    <div class="project-links">
-                        <a href="https://github.com/Yosefnago/ams-microservices.git" target="_blank" aria-label="GitHub link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
-                                <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z"/>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="project-content">
+                    AMS System is a microservices-based Accounting Management System designed to provide
+                    comprehensive accounting and management functionalities.
+                    The system is built using Spring Boot and Spring Cloud technologies,
+                    following a microservices architecture pattern for scalability, maintainability, and resilience.
                 </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Yosefnago/ams-microservices.git" target="_blank"
+                        aria-label="GitHub link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
             <div class="project-card">
                 <div class="title">Emp - Backend</div>
-                    <div class="project-content">
-                        Java & Spring Boot backend for a modular Employee Management System.
-                        This service exposes secure RESTful APIs for managing employees, salary details, authentication, and user-related operations.
-                        Built using Spring Boot, JPA, PostgreSQL, and JWT-based authentication, following clean architecture and layered design.
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Yosefnago/emp-backend.git" target="_blank" aria-label="GitHub link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
-                                <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z"/>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="project-content">
+                    Java & Spring Boot backend for a modular Employee Management System.
+                    This service exposes secure RESTful APIs for managing employees, salary details, authentication, and
+                    user-related operations.
+                    Built using Spring Boot, JPA, PostgreSQL, and JWT-based authentication, following clean architecture
+                    and layered design.
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Yosefnago/emp-backend.git" target="_blank" aria-label="GitHub link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="project-card">
                 <div class="title">Emp - Frontend</div>
-                    <div class="project-content">
-                    Angular-based frontend for the Employee Management System, providing an intuitive and responsive interface 
-                    for employee operations, salary management, and admin control.  
-                    Developed using Angular with TypeScript, HTML, and CSS, featuring modular architecture, reusable components, 
+                <div class="project-content">
+                    Angular-based frontend for the Employee Management System, providing an intuitive and responsive
+                    interface
+                    for employee operations, salary management, and admin control.
+                    Developed using Angular with TypeScript, HTML, and CSS, featuring modular architecture, reusable
+                    components,
                     and REST API integration with the Spring Boot backend for secure and efficient data handling.
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Yosefnago/Emp-frontend.git" target="_blank" aria-label="GitHub link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
-                                <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z"/>
-                            </svg>
-                        </a>
-                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Yosefnago/Emp-frontend.git" target="_blank" aria-label="GitHub link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="project-card">
                 <div class="title">Assembler Project (C Language)</div>
-                    <div class="project-content">
-                        This project was developed as part of an academic course in computer architecture.
-                        It is a C-based assembler and instruction simulator that translates custom assembly
-                         commands into machine-level operations and emulates how a simple CPU executes them.
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Yosefnago/AssemblerProject.git" target="_blank" aria-label="GitHub link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
-                                <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z"/>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="project-content">
+                    This project was developed as part of an academic course in computer architecture.
+                    It is a C-based assembler and instruction simulator that translates custom assembly
+                    commands into machine-level operations and emulates how a simple CPU executes them.
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Yosefnago/AssemblerProject.git" target="_blank"
+                        aria-label="GitHub link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+                            <path
+                                d="M12 .297a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.24c-3.34.73-4.05-1.61-4.05-1.61a3.19 3.19 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.23 2.56 2.56 0 0 0 3.51 1 2.56 2.56 0 0 1 .77-1.61c-2.67-.3-5.47-1.33-5.47-5.93a4.65 4.65 0 0 1 1.24-3.23 4.32 4.32 0 0 1 .12-3.18s1-.33 3.3 1.25a11.38 11.38 0 0 1 6 0c2.31-1.58 3.3-1.25 3.3-1.25a4.32 4.32 0 0 1 .12 3.18 4.65 4.65 0 0 1 1.24 3.23c0 4.61-2.8 5.62-5.48 5.92a2.85 2.85 0 0 1 .82 2.21v3.28c0 .32.22.7.83.58A12 12 0 0 0 12 .297Z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-          
-          
+
+
+    </section>
+    <section id="certificates">
+        <h2 class="section-titles">Certificates Overview</h2>
+        <div class="certificates-row">
+
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="oracle.png" alt="Oracle Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Oracle Java Foundations</div>
+                    <p class="certificate-desc">by Oracle University</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="spring.png" alt="Spring Boot Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Creating Spring Boot Microservices</div>
+                    <p class="certificate-desc">by Mary Ellen Bowman</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="jetBrains.png" alt="JetBrains Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Java Foundations</div>
+                    <p class="certificate-desc">Professional Certificate by JetBrains</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="jdbc.png" alt="Learning JDBC Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Learning JDBC</div>
+                    <p class="certificate-desc">by Frank Moley</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="javaEssential.png" alt="Java Essential Training: Objects and APIs Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Java Essential Training: Objects and APIs</div>
+                    <p class="certificate-desc">by Angie Jones</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="javaObjects.png" alt="Java Essential Training: Syntax and Structure Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Java Essential Training: Syntax and Structure</div>
+                    <p class="certificate-desc">by Angie Jones</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="javaJPA.png" alt="Java Persistence with JPA and Hibernate Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Java Persistence with JPA and Hibernate</div>
+                    <p class="certificate-desc">by Buddhini Ranasinghe</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="javaOO.png" alt="Programming Foundations: Object-Oriented Design Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Programming Foundations: Object-Oriented Design</div>
+                    <p class="certificate-desc">by Olivia Stone and Barron Stone</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="javaOOP.png" alt="Java Object-Oriented Programming Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Java Object-Oriented Programming</div>
+                    <p class="certificate-desc">by Kathryn Hodge</p>
+                </div>
+            </div>
+            <div class="certificate-card">
+                <div class="certificate-img-wrapper">
+                    <img src="javaData.png" alt="Java: Data Structures Certificate">
+                </div>
+                <div class="certificate-info">
+                    <div class="title">Java: Data Structures</div>
+                    <p class="certificate-desc">by Bethan Palmer</p>
+                </div>
+            </div>
+
+            <!-- Add more cards here the same way -->
+
+        </div>
     </section>
 
     <section id="skills">
@@ -165,127 +323,144 @@
 
                 <div class="title">Backend-Development</div>
 
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                        <span>Java</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
-                        <span>Spring Boot</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
-                        <span>PostgreSQL</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-                        <span>MySQL</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" alt="RESTful API (Swagger)">
-                        <span>RESTful APIs</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" alt="Hibernate">
-                        <span>Hibernate / JPA</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
-                        <span>Postman</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Security">
-                        <span>Spring Security</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                    <span>Java</span>
                 </div>
-                
+
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        alt="Spring Boot">
+                    <span>Spring Boot</span>
+                </div>
+
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL">
+                    <span>PostgreSQL</span>
+                </div>
+
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg"
+                        alt="RESTful API (Swagger)">
+                    <span>RESTful APIs</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg"
+                        alt="Hibernate">
+                    <span>Hibernate / JPA</span>
+                </div>
+
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                        alt="Postman">
+                    <span>Postman</span>
+                </div>
+
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                        alt="Spring Security">
+                    <span>Spring Security</span>
+                </div>
+            </div>
+
             <div class="skills-card">
                 <div class="title">Frontend-Development</div>
 
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                        <span>HTML</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <span>HTML</span>
+                </div>
 
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                        <span>CSS</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <span>CSS</span>
+                </div>
 
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg" alt="Angular">
-                        <span>Angular</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
+                        alt="Angular">
+                    <span>Angular</span>
+                </div>
 
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
-                        <span>TypeScript</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" alt="RESTful API Integration">
-                        <span>RESTful API Integration</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript">
+                    <span>TypeScript</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg"
+                        alt="RESTful API Integration">
+                    <span>RESTful API Integration</span>
+                </div>
             </div>
             <div class="skills-card">
                 <div class="title">Tools & Environment</div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                        <span>Git</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
 
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
-                        <span>GitHub</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-                        <span>VS Code</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA">
-                            <span>IntelliJ IDEA
-                        </span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven">
-                        <span>Maven</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON">
-                        <span>JSON</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman">
-                        <span>Postman</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub">
+                    <span>GitHub</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                        alt="VS Code">
+                    <span>VS Code</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+                        alt="IntelliJ IDEA">
+                    <span>IntelliJ IDEA
+                    </span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven">
+                    <span>Maven</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="JSON">
+                    <span>JSON</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+                        alt="Postman">
+                    <span>Postman</span>
+                </div>
             </div>
             <div class="skills-card">
                 <div class="title">Computer Science Foundations</div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="OOP">
-                        <span>Object-Oriented Programming (OOP)</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Data Structures">
-                        <span>Data Structures</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-original.svg" alt="Algorithms">
-                        <span>Algorithms</span>
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="Computer Architecture">
-                        <span>Computer Architecture</span>
-                    </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="OOP">
+                    <span>Object-Oriented Programming (OOP)</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                        alt="Data Structures">
+                    <span>Data Structures</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-original.svg"
+                        alt="Algorithms">
+                    <span>Algorithms</span>
+                </div>
+                <div class="tech-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg"
+                        alt="Computer Architecture">
+                    <span>Computer Architecture</span>
+                </div>
             </div>
         </div>
     </section>
@@ -295,41 +470,35 @@
 
         <div class="contact-container">
 
-            <input type="text" [(ngModel)]="name" placeholder="Your Name" class="name-input" >
+            <input type="text" [(ngModel)]="name" placeholder="Your Name" class="name-input">
 
-            <input  type="email"
-                    name="email"
-                    [(ngModel)]="email"
-                    #emailCtrl="ngModel"
-                    email
-                    placeholder="Your Email"
-                    class="email-input">
+            <input type="email" name="email" [(ngModel)]="email" #emailCtrl="ngModel" email placeholder="Your Email"
+                class="email-input">
 
-            <textarea [(ngModel)]="message" placeholder="Your Message" class="contact-textarea" ></textarea>
+            <textarea [(ngModel)]="message" placeholder="Your Message" class="contact-textarea"></textarea>
             <button (click)="sendEmail(emailCtrl)" class="contact-button" [disabled]="isSending">Send Message</button>
 
             <div class="status-area">
                 @if (isSending) {
-                    <span class="spinner"></span>
+                <span class="spinner"></span>
                 }
                 @if (sent) {
-                    <p class="success-msg">✅ Message sent successfully!</p>
+                <p class="success-msg">✅ Message sent successfully!</p>
                 }@else if (error) {
-                    <p class="error-msg">❌ Failed to send message. Try again later.</p>
+                <p class="error-msg">❌ Failed to send message. Try again later.</p>
                 }@else if (emptyFields) {
-                    <p class="empty-fields">⚠️ Fields cannot be empty.</p>
+                <p class="empty-fields">⚠️ Fields cannot be empty.</p>
                 }@else if (invalidEmail) {
-                    <p class="error-msg">⚠️ Please enter a valid email address.</p>
+                <p class="error-msg">⚠️ Please enter a valid email address.</p>
                 }
             </div>
-            
-            
+
+
         </div>
 
 
     </section>
 </section>
 <footer class="footer">
-  <p>© 2025 Yosef Nago. All rights reserved.</p>
+    <p>© 2026 Yosef Nago. All rights reserved.</p>
 </footer>
-
